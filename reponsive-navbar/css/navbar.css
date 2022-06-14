@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "SpaceMission";
+  src: url("../fonts/SpaceMission-rgyw9.otf");
+}
+html {
+  font-size: 62, 5%;
+}
+
+ion-icon {
+  font-size: 1.5rem;
+}
+
+i {
+  font-size: 1.3rem;
+}
+
+body {
+  background: black;
+}
+
+.header {
+  background: #A1CD44;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  height: 90px;
+}
+.header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-shrink: 0;
+}
+.header-icon {
+  height: auto;
+  width: 70px;
+  vertical-align: middle;
+  align-self: center;
+  justify-self: center;
+}
+.header-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 2rem;
+  padding-left: 0.7rem;
+  font-family: "SpaceMission";
+}
+.header-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.header-navigation-list {
+  list-style-type: none;
+  flex-shrink: 1;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+.header-navigation-item {
+  display: inline-block;
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #0a0a0a;
+  cursor: pointer;
+  transition: all 200ms linear;
+}
+.header-navigation-item:hover {
+  color: #6d9c00;
+}
+.header-navigation-item:not(:first-child) {
+  margin-left: 0.9rem;
+}
+.header-navigation-item--divider {
+  border-left: 2px solid rgba(0, 0, 0, 0.1);
+  height: 30px;
+  vertical-align: middle;
+  position: relative;
+  margin: 0 7.5px;
+  cursor: default;
+}
+.header-navigation-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-left: 3rem;
+}
+.header-navigation-cart:hover .header-navigation-cart-number {
+  background: #6d9c00;
+}
+.header-navigation-cart-number {
+  position: absolute;
+  color: white;
+  font-weight: 500;
+  font-size: 0.7rem;
+  position: absolute;
+  background: #0a0a0a;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 1.2rem;
+  height: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 200ms linear;
+}
+.header-navigation-cart ion-icon {
+  font-size: 2.3rem;
+}
+.header-navigation-cart ion-icon:hover {
+  color: #6d9c00;
+}
+.header-navigation-form-find {
+  position: absolute;
+  background: #A1CD44;
+}
+
+@media screen and (max-width: 1205px) {
+  .header-navigation-cart {
+    margin-left: 2rem;
+  }
+}
+@media screen and (max-width: 1188px) {
+  .header-icon {
+    width: 100px;
+    height: auto;
+  }
+  .header-navigation-cart {
+    margin-left: auto;
+  }
+  .header-brand {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=navbar.css.map */
