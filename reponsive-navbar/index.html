@@ -12,39 +12,47 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="css/slider.css">
 </head>
 
 <body>
 
     <div class="header">
+        <div class="header-hamburger-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
         <div class="header-logo">
             <img src="./img/froggy-gaming-icon-2.png" alt="Logo" class="header-icon">
             <span class="header-brand">Froggy<br>Gaming</span>
         </div>
+        <div class="header-invin-flex">
+            <p>hello</p>
+        </div>
         <div class="header-navigation">
             <ul class="header-navigation-list">
                 <li class="header-navigation-item">Tin tức</li>
+                <li class="header-navigation-item">Danh mục</li>
                 <li class="header-navigation-item">Bàn phím</li>
                 <li class="header-navigation-item">Chuột</li>
                 <li class="header-navigation-item">Tai Nghe</li>
                 <li class="header-navigation-item">Microphone</li>
-                <li class="header-navigation-item">Danh mục</li>
                 <li class="header-navigation-item">Hỗ trợ</li>
                 <li class="header-navigation-item header-navigation-item--divider"></li>
                 <li class="header-navigation-item">
                     <ion-icon name="search-outline"></ion-icon>
                     <form class="header-navigation-form" autocomplete="off">
-                        <!-- background white + co hinh tam giac lam caret -->
+                        <div class="triangle"></div>
                         <div class="header-navigation-form-find">
-                            <label for="search" class="header-navigation-form-label">Nhập vào sản phẩm bạn muốn tìm</label>
-                            <input type="text" for="search" class="header-navigation-form-input">
+                            <input type="search" for="search" class="header-navigation-form-input" placeholder="Nhập vào sản phẩm muốn tìm">
+                            <ion-icon name="search-outline"></ion-icon>
                         </div>
                     </form>
                 </li>
 
                 <li class="header-navigation-item">
                     <div class="header-navigation-contact">
-                        <i class="fa-solid fa-circle-question"></i>
+                        <i class="fa-solid fa-user-gear"></i>
                     </div>
                 </li>
                 <li class="header-navigation-item">
@@ -57,7 +65,44 @@
             </ul>
         </div>
     </div>
-
+    <div class="image-slider">
+        <div class="image-item">
+            <div class="image">
+                <img src="https://akkogear.com.vn/wp-content/uploads/2022/05/ACRPRO_Banner_Upload.jpg" alt="">
+            </div>
+        </div>
+        <div class="image-item">
+            <div class="image">
+                <img src="https://akkogear.com.vn/wp-content/uploads/2022/05/MOD008_banner_01.jpg" alt="">
+            </div>
+        </div>
+        <div class="image-item">
+            <div class="image">
+                <img src="https://akkogear.com.vn/wp-content/uploads/2021/11/akko-5108S-zaychik-banner-01.jpg" alt="">
+            </div>
+        </div>
+        <div class="image-item">
+            <div class="image">
+                <img src="https://aerocool.io/wp-content/uploads/2019/10/EARL-Gaming-Chair-BG-1920x700-01_KV.jpg" alt="">
+            </div>
+        </div>
+        <div class="image-item">
+            <div class="image">
+                <img src="https://ae01.alicdn.com/kf/Hf96f47951f794680bf4e4916bbffb3227.jpg" alt="">
+            </div>
+        </div>
+        <div class="image-item">
+            <div class="image">
+                <img src="https://akkogear.com.vn/wp-content/uploads/2022/04/z3354798047230_dff228a8cb13d117941e5d0f0eb113ac-2048x747.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <p>hwhjk</p>
 </body>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="slick.js"></script>
 
 </html>

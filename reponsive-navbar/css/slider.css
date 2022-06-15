@@ -1,0 +1,96 @@
+:root {
+    --ratio: 2.74;
+}
+
+.image-slider {
+    z-index: 0;
+}
+
+.image-item {
+    height: 100%;
+    position: relative;
+}
+
+.image {
+    height: 0;
+    position: relative;
+    padding-bottom: calc(100% / (var(--ratio)));
+    overflow: hidden;
+    z-index: 0;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 500ms linear;
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+    object-fit: cover;
+}
+
+.image img:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+.PrevArrow {
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 0, 0, .50);
+    border: 0 none;
+    margin-top: -22.5px;
+    text-align: center;
+    color: #FFF;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.NextArrow {
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 0, 0, .50);
+    border: 0 none;
+    border-radius: 50%;
+    margin-top: -22.5px;
+    text-align: center;
+    color: #FFF;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.slick-dots {
+    position: absolute !important;
+    display: flex !important;
+}
+
+@media screen and (max-width: 1024px) {
+    .PrevArrow {
+        width: 35px;
+        height: 35px;
+        left: 0;
+
+    }
+
+    .PrevArrow i,
+    .NextArrow i {
+        font-size: 1rem;
+    }
+
+    .NextArrow {
+        width: 35px;
+        height: 35px;
+        right: 0;
+    }
+}
