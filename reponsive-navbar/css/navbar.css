@@ -104,6 +104,7 @@ body {
 .header-navigation-item:nth-child(9):hover .header-navigation-form {
   opacity: 1;
   visibility: visible;
+  transform: translateY(1rem);
 }
 .header-navigation-item:nth-child(9)::after {
   content: "";
@@ -150,24 +151,25 @@ body {
   opacity: 0;
   position: absolute;
   background: white;
-  transition: all 160ms linear;
+  transition: opacity 160ms linear, transform 100ms linear;
   border: 2px solid #ddd;
   box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15);
   border-radius: 0.5rem;
   padding: 2rem 1rem;
-  margin-top: 1rem;
   right: -0.5rem;
   cursor: default;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 350px;
+  z-index: 4;
 }
 .header-navigation-form-find {
   position: relative;
   width: 100%;
   display: flex;
   align-items: center;
+  z-index: 4;
 }
 .header-navigation-form-input {
   outline: none;
@@ -239,6 +241,9 @@ body {
     align-items: center;
     justify-content: space-between;
   }
+  .header-icon {
+    width: 60px;
+  }
   .header-navigation {
     display: none;
   }
@@ -247,6 +252,7 @@ body {
   }
   .header-brand {
     display: inline-flex;
+    font-size: 1.2rem;
   }
   .header-invin-flex {
     opacity: 0;

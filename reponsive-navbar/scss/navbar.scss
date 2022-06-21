@@ -137,6 +137,7 @@ body {
                     .header-navigation-form {
                         opacity: 1;
                         visibility: visible;
+                        transform: translateY(1rem);
                     }
                 }
 
@@ -195,12 +196,11 @@ body {
             opacity: 0;
             position: absolute;
             background: $primary;
-            transition: all 160ms linear;
+            transition: opacity 160ms linear, transform 100ms linear;
             border: 2px solid #ddd;
             box-shadow: 1px 1px 15px rgb(0 0 0 / 15%);
             border-radius: 0.5rem;
             padding: 2rem 1rem;
-            margin-top: 1rem;
             right: -0.5rem;
             cursor: default;
             display: flex;
@@ -305,6 +305,11 @@ body {
         align-items: center;
         justify-content: space-between;
 
+        &-icon {
+            width: 60px;
+        }
+
+
         &-navigation {
             display: none;
 
@@ -315,6 +320,7 @@ body {
 
         &-brand {
             display: inline-flex;
+            font-size: 1.2rem;
         }
 
         &-invin-flex {
