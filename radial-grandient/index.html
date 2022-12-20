@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radial Gradient</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=DM+Sans:regular,italic,500,500italic,700,700italic"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <style>
+      html {
+        --s: 150px;
+        --c1: #ffb86c;
+        --c2: #2979ff;
+        --g: var(--c1) 0 5%, var(--c2) 6% 15%, var(--c1) 16% 25%,
+          var(--c2) 26% 35%, var(--c1) 36% 45%, var(--c2) 46% 55%,
+          var(--c1) 56% 65%, var(--c2) 66% 75%, var(--c1) 76% 85%,
+          var(--c2) 86% 95%, transparent 96%;
+        background: radial-gradient(50% 50% at top right, var(--g)),
+          radial-gradient(50% 50% at bottom left, var(--g)),
+          radial-gradient(50% 50% at center, var(--g)),
+          radial-gradient(50% 50% at center, var(--g)) calc(var(--s) / 2)
+            calc(var(--s) / 2),
+          linear-gradient(45deg, var(--c1), var(--c1));
+        background-size: var(--s) var(--s);
+        /* background-repeat: no-repeat; */
+      }
+    </style>
+  </body>
+</html>
