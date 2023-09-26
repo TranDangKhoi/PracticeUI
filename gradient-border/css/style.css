@@ -1,11 +1,14 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 150px;
+}
 .card {
-  width: 300px;
-  height: 400px;
   position: relative;
-  border: 1px solid transparent;
-  border-radius: 12px;
   background-clip: padding-box;
+  border: 3px solid transparent;
   background-color: #191a28;
+  border-radius: 12px;
 }
 
 body {
@@ -17,7 +20,7 @@ body {
   position: absolute;
   border-radius: 12px;
   inset: 0;
-  margin: -1px;
+  margin: -3px;
   z-index: -999;
   background-image: linear-gradient(to right, red, yellow);
 }
